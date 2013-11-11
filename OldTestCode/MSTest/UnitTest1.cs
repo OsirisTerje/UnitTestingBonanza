@@ -9,7 +9,7 @@ namespace MSTest
 {
     [TestFixture]
     [TestClass]
-    public class MsTest1
+    public class MultiTest1
     {
         [TestMethod]
         public void MsTestMethod1()
