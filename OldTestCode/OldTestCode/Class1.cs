@@ -15,5 +15,25 @@ namespace OldTestCode
         {
             Assert.IsTrue(true);
         }
+
+        [TestMethod]
+        public void MSTestit2()
+        {
+            Assert.IsTrue(true);
+        }
+
+        [TestMethod]
+        public void MSTestit3()
+        {
+            Assert.IsTrue(true);
+        }
+
+        [TestMethod]
+        public void MSTestit4()
+        {
+            Assert.IsTrue(true);
+        }
+
+
     }
 }
