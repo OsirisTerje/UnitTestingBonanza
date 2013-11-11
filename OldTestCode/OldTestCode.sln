@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OldTestCode", "OldTestCode\OldTestCode.csproj", "{F3FE7A0E-6946-40D9-AD72-718A0A407E02}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSTests", "OldTestCode\MSTests.csproj", "{F3FE7A0E-6946-40D9-AD72-718A0A407E02}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSTest", "MSTest\MSTest.csproj", "{6ACB5565-5733-4D85-8AE0-38A9476F6194}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiTests", "MSTest\MultiTests.csproj", "{6ACB5565-5733-4D85-8AE0-38A9476F6194}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitTests", "NUnitTests\NUnitTests.csproj", "{CB3CE1BB-7F73-4F7D-99E5-8197870D416F}"
 EndProject
