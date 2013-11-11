@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 
-namespace OldTestCode
+namespace NUnitTests
 {
-    [TestClass]
-    public class SomeOldTest
+    [TestFixture]
+    public class N1
     {
-        [TestMethod]
-        public void MSTestit()
+        [Test]
+        public void NTestit()
         {
             Assert.IsTrue(true);
         }

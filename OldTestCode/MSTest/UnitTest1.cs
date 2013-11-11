@@ -7,7 +7,7 @@ namespace MSTest
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMethod1()
+        public void MSTestMethod1()
         {
             Assert.IsTrue(true);
         }
