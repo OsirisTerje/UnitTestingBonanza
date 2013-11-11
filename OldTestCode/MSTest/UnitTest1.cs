@@ -24,13 +24,13 @@ namespace MSTest
             Assert.IsTrue(true);
         }
 
-        
         [TestMethod]
         public void MsTestMethod3()
         {
             Assert.IsTrue(true);
         }
 
+        [IntegrationTest]
         [TestCase(4,8)]
         [TestCase(2,4)]
         [Test]
@@ -42,4 +42,8 @@ namespace MSTest
 
 
     }
+
+
+    public class IntegrationTest : NUnit.Framework.CategoryAttribute
+    { }
 }
