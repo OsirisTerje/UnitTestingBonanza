@@ -19,8 +19,16 @@ namespace OldTestCode
         [TestMethod]
         public void MSTestit2()
         {
-            Assert.IsTrue(true);
+            Assert.AreEqual(true,true);
+            var x = new Whatever();
+            Assert.AreSame(x,x);
+            var now = DateTime.Now;
+            Assert.IsInstanceOfType(now,typeof(DateTime));
+            Assert.IsNull(null);
+            
+
         }
+
 
         [TestMethod]
         public void MSTestit3()
