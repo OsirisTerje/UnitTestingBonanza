@@ -24,7 +24,7 @@ namespace OldTestCode
             var x = new Whatever();
             Assert.AreSame(x,x);
             var now = DateTime.Now;
-            Assert.IsInstanceOfType(now,typeof(DateTime));
+            AssertMS.IsInstanceOfType(now,typeof(DateTime));
             Assert.IsInstanceOf();
             Assert.IsNull(null);
             

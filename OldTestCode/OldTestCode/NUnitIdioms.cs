@@ -14,9 +14,9 @@ namespace NUnit.Framework
 
     public class AssertMS
     {
-        public static bool IsInstanceOfType(object actual, typeof expected)
+        public static void IsInstanceOfType(object actual, Type expected)
         {
-            
+            Assert.IsInstanceOf(expected,actual);
         }
     }
 }
