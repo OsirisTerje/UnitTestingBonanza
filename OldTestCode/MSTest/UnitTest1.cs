@@ -42,6 +42,17 @@ namespace MSTest
             Now.Assert.That(result,Now.Is.EqualTo(expected));
         }
 
+        [TestCase(true)]
+        [TestCase(4.1)]
+        [TestCase(2)]
+        [Test]
+        public void NUnitDataDrivenGenericTest<T>(T x) where T:struct
+        {
+            var container = new Container<T> {Value = x};
+            Now.Assert.That(container.Value, Now.Is.EqualTo(x));
+        }
+
+
         [Fact]
         public void XTestMethod1()
         {
@@ -53,4 +64,9 @@ namespace MSTest
 
     public class IntegrationTest : NUnit.Framework.CategoryAttribute
     { }
+
+    public class Container<T>
+    {
+        public T Value { get; set; }
+    }
 }
