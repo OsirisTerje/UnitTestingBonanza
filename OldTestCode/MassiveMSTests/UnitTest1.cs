@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace OldTestCode
+namespace MassiveMSTests
 {
     [TestClass]
-    public class SomeOldTest
+    public class HugeMSTestClass
     {
         [TestMethod]
         public void MSTestit1()
@@ -33,6 +29,5 @@ namespace OldTestCode
         {
             Assert.IsTrue(true);
         }
-
     }
 }
