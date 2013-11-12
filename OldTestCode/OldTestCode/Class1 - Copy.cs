@@ -4,12 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using NUnit.Framework;
-using Assert = NUnit.Framework.AssertMs;
+
+//using TestInitialize = NUnit.Framework.SetUpAttribute;
+//using TestContext = System.Object;
+//using TestProperty = NUnit.Framework.PropertyAttribute;
+//using TestClass = NUnit.Framework.TestFixtureAttribute;
+//using TestMethod = NUnit.Framework.TestAttribute;
+//using TestCleanup = NUnit.Framework.TearDownAttribute;
 
 namespace OldTestCode
 {
     [TestClass]
-    public class SomeOldTest
+    public class SomeOldTest2
     {
 
 
@@ -34,7 +40,8 @@ namespace OldTestCode
             var x = new Whatever();
             Assert.AreSame(x,x);
             var now = DateTime.Now;
-            Assert.IsInstanceOfType(now,typeof(DateTime));
+            AssertMs.IsInstanceOfType(now,typeof(DateTime));
+            Assert.IsInstanceOf();
             Assert.IsNull(null);
         }
 
