@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Xunit;
+using Xunit.Extensions;
 using Assert = Microsoft.VisualStudio.TestTools.UnitTesting.Assert;
 using NU = NUnit.Framework;
 using TestFixture = NUnit.Framework.TestFixtureAttribute;
@@ -42,12 +43,18 @@ namespace MSTest
             NU.Assert.That(res,NU.Is.EqualTo(y));
         }
 
-        [Fact]
-        public void XTestMethod1()
+        [InlineData(42, 84)]
+        [InlineData(4,8)]
+        [Xunit.Extensions.Theory]
+        public void XTestMethod1(int x, int expected)
         {
-            Xunit.Assert.True(true);
+            var result = x*2;
+            Xunit.Assert.Equal(expected,result);
         }
 
+
+
+        
     }
 
 
