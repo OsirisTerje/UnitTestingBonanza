@@ -2,7 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Xunit;
 using Assert = Microsoft.VisualStudio.TestTools.UnitTesting.Assert;
-using NU = NUnit.Framework;
+using Now = NUnit.Framework;
 using TestFixture = NUnit.Framework.TestFixtureAttribute;
 using Test = NUnit.Framework.TestAttribute;
 using TestCase = NUnit.Framework.TestCaseAttribute;
@@ -36,10 +36,10 @@ namespace MSTest
         [TestCase(4,8)]
         [TestCase(2,4)]
         [Test]
-        public void NUnitDataDrivenTest(int x,int y)
+        public void NUnitDataDrivenTest(int x,int expected)
         {
-            int res = x*2;
-            NU.Assert.That(res,NU.Is.EqualTo(y));
+            int result = x*2;
+            Now.Assert.That(result,Now.Is.EqualTo(expected));
         }
 
         [Fact]
