@@ -41,4 +41,12 @@ namespace NUnit.Framework
             
         }
     }
+
+    public class PriorityAttribute : PropertyAttribute
+    {
+        public PriorityAttribute(int n) : base("Priority",n)
+        {
+            
+        }
+    }
 }
