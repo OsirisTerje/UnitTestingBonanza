@@ -10,6 +10,16 @@ namespace OldTestCode
     [TestClass]
     public class SomeOldTest
     {
+
+
+        [TestInitialize]
+        public void StartItUp()
+        { }
+
+        [TestCleanup]
+        public void EndItAll()
+        { }
+
         [TestMethod]
         public void MSTestit1()
         {
@@ -25,17 +35,18 @@ namespace OldTestCode
             var now = DateTime.Now;
             Assert.IsInstanceOfType(now,typeof(DateTime));
             Assert.IsNull(null);
-            
-
         }
 
-
+        [ExpectedException(typeof(Exception))]
         [TestMethod]
         public void MSTestit3()
         {
-            Assert.IsTrue(true);
+           throw new Exception();
         }
 
+        [Priority(1)]
+        [TestProperty("Whatever","Something")]
+        [TestCategory("LongRunningTest")]
         [TestMethod]
         public void MSTestit499()
         {
