@@ -46,4 +46,5 @@ namespace NUnit.Framework
     public class TestMethodAttribute : NUnit.Framework.TestAttribute
     { }
 
+    //See https://xunit.codeplex.com/wikipage?title=Comparisons&referringTitle=Home for comparisons
 }
