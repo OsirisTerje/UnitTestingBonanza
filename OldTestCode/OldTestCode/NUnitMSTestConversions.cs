@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NUnit.Framework
 {
@@ -29,6 +25,11 @@ namespace NUnit.Framework
     public class TestCategory : CategoryAttribute
     {
         public TestCategory(string category) : base(category)
+        {
+            
+        }
+
+        public TestCategory() 
         {
             
         }
