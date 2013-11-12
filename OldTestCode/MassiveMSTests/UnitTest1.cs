@@ -33,12 +33,17 @@ namespace MassiveMSTests
     }
 
 
+  
+
+}
+
+namespace NUnit.Framework
+{
     public class TestClassAttribute : NUnit.Framework.TestFixtureAttribute
     {
     }
 
     public class TestMethodAttribute : NUnit.Framework.TestAttribute
     { }
-
 
 }
