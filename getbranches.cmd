@@ -10,6 +10,7 @@ git checkout -b SecondNUnitTest origin/SecondNUnitTest
 git checkout -b SevenMixin origin/SevenMixin
 git checkout -b SixthXUnitTestLegacy origin/SixthXUnitTestLegacy
 git checkout -b Step11-MassiveMSTests origin/Step11-MassiveMSTests
+git checkout -b Step12-MassiveMSTestsConverted origin/Step12-MassiveMSTestsConverted
 git checkout -b Step11B-DifferentInfo origin/Step11B-DifferentInfo
 git checkout -b Step11B-DifferentInfo-NUnit origin/Step11B-DifferentInfo-NUnit
 git checkout -b TenB origin/TenB
