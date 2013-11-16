@@ -34,9 +34,9 @@ namespace MSTest
         [TestCase(4,8)]
         [TestCase(2,4)]
         [Test]
-        public void NUnitDataDrivenTest(int x,int y)
+        public void NUnitDataDrivenTest(int somedata,int theResult)
         {
-            int res = x*2;
+            int res = somedata*2;
             NU.Assert.That(res,NU.Is.EqualTo(y));
         }
 
