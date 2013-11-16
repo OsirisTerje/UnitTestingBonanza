@@ -7,6 +7,7 @@ using TestCase = NUnit.Framework.TestCaseAttribute;
 
 namespace MSTest
 {
+    [IntegrationTest]
     [TestFixture]
     [TestClass]
     public class MsTest1
