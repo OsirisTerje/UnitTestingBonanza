@@ -1,6 +1,7 @@
 ﻿using System;
 //using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NUnit.Framework;
+using  Assert = NUnit.Framework.AssertMs;
 
 namespace MassiveMSTests
 {
@@ -29,6 +30,13 @@ namespace MassiveMSTests
         public void MSTestit499()
         {
             Assert.IsTrue(true);
+        }
+
+        [TestMethod]
+        public void MSTestit799()
+        {
+            var d = DateTime.Now;
+            Assert.IsInstanceOfType(d,typeof(DateTime));
         }
     }
 

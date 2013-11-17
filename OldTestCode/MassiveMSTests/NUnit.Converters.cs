@@ -14,6 +14,11 @@ namespace NUnit.Framework
     public class TestCleanupAttribute : TearDownAttribute
     { }
  
+    /// <summary>
+    /// Add using  Assert = NUnit.Framework.AssertMs; 
+    /// at top of file to avoid using AssertMs in front of these. 
+    /// You might need to suppress a R# warning, add it to your team settings. 
+    /// </summary>
     public class AssertMs : Assert
     {
         public static void IsInstanceOfType(object actual, Type expected)
