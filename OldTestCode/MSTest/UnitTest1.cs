@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Xunit;
 using Assert = Microsoft.VisualStudio.TestTools.UnitTesting.Assert;
@@ -52,6 +53,15 @@ namespace MSTest
             Now.Assert.That(container.Value, Now.Is.EqualTo(x));
         }
 
+        [Test, Now.TestCaseSourceAttribute(typeof(TypeFactory), "Data")]
+        public void NUnitDataDrivenGenericTest2<T>(T x) 
+        {
+            var container = new Container<T> { Value = x };
+            Now.Assert.That(container.Value, Now.Is.EqualTo(x));
+        }
+
+
+
 
         [Fact]
         public void XTestMethod1()
@@ -61,6 +71,28 @@ namespace MSTest
 
     }
 
+
+
+    public class TypeFactory
+    {
+        static public IEnumerable Data
+        {
+            get
+            {
+                yield return new Now.TestCaseData(new A());
+                yield return new Now.TestCaseData(new B());
+            }
+        }
+    }
+
+
+    class A
+    {
+        
+    }
+
+    class B
+    {}
 
     public class IntegrationTest : NUnit.Framework.CategoryAttribute
     { }
