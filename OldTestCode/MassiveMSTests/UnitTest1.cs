@@ -1,7 +1,5 @@
 ﻿using System;
-//using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NUnit.Framework;
-using  Assert = NUnit.Framework.AssertMs;
 
 namespace MassiveMSTests
 {
@@ -32,27 +30,14 @@ namespace MassiveMSTests
             Assert.IsTrue(true);
         }
 
-        [TestMethod]
-        public void MSTestit799()
-        {
-            var d = DateTime.Now;
-            Assert.IsInstanceOfType(d,typeof(DateTime));
-        }
+
+
+
+       
     }
 
-
-  
+    
 
 }
 
-//namespace NUnit.Framework
-//{
-//    public class TestClassAttribute : NUnit.Framework.TestFixtureAttribute
-//    {
-//    }
-
-//    public class TestMethodAttribute : NUnit.Framework.TestAttribute
-//    { }
-
-//    //See https://xunit.codeplex.com/wikipage?title=Comparisons&referringTitle=Home for comparisons
-//}
+   
