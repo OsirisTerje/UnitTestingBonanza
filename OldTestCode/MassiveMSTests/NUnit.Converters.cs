@@ -1,4 +1,6 @@
-﻿using System;
+﻿// This code is grabbed off https://gist.github.com/OsirisTerje/7437743 
+
+using System;
  
 namespace NUnit.Framework
 {
