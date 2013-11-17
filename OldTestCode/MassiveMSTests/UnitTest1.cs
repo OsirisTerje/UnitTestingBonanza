@@ -37,14 +37,14 @@ namespace MassiveMSTests
 
 }
 
-namespace NUnit.Framework
-{
-    public class TestClassAttribute : NUnit.Framework.TestFixtureAttribute
-    {
-    }
+//namespace NUnit.Framework
+//{
+//    public class TestClassAttribute : NUnit.Framework.TestFixtureAttribute
+//    {
+//    }
 
-    public class TestMethodAttribute : NUnit.Framework.TestAttribute
-    { }
+//    public class TestMethodAttribute : NUnit.Framework.TestAttribute
+//    { }
 
-    //See https://xunit.codeplex.com/wikipage?title=Comparisons&referringTitle=Home for comparisons
-}
+//    //See https://xunit.codeplex.com/wikipage?title=Comparisons&referringTitle=Home for comparisons
+//}
