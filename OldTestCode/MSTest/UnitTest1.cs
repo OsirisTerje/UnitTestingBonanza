@@ -37,7 +37,7 @@ namespace MSTest
         public void NUnitDataDrivenTest(int somedata,int theResult)
         {
             int res = somedata*2;
-            NU.Assert.That(res,NU.Is.EqualTo(y));
+            NU.Assert.That(res,NU.Is.EqualTo(theResult));
         }
 
 
