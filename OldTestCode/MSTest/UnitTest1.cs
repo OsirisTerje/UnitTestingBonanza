@@ -31,14 +31,13 @@ namespace MSTest
             Assert.IsTrue(true);
         }
 
-        [TestCase(4,8)]
-        [TestCase(2,4)]
         [Test]
-        public void NUnitDataDrivenTest(int somedata,int theResult)
+        public void NUnitTestMethod4()
         {
-            int res = somedata*2;
-            NU.Assert.That(res,NU.Is.EqualTo(theResult));
+            NU.Assert.IsTrue(true);
         }
+
+     
 
 
     }
