@@ -31,6 +31,13 @@ namespace MSTest
             Assert.IsTrue(true);
         }
 
+
+        [Test]
+        public void NUnitTestMethod4()
+        {
+            NU.Assert.IsTrue(true);
+        }
+
         [TestCase(4,8)]
         [TestCase(2,4)]
         [Test]
