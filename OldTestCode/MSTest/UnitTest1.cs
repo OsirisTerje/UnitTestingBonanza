@@ -30,7 +30,11 @@ namespace MSTest
         {
             Assert.IsTrue(true);
         }
-
+        /// <summary>
+        /// Adding in a simple NUnit Test method in the same class that are used for MSTest
+        /// The class itself must have both MSTest and NUNit attributes
+        /// The Assert statement is ambigious, so we prefix the NUnit ones.
+        /// </summary>
         [Test]
         public void NUnitTestMethod4()
         {
