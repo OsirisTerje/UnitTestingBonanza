@@ -24,7 +24,7 @@ namespace MSTest
             Assert.IsTrue(true);
         }
 
-        
+        [Test]
         [TestMethod]
         public void MsTestMethod3()
         {
